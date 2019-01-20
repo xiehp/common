@@ -26,6 +26,10 @@ public class XWaitTime {
 		this.timeout = timeout;
 	}
 
+	public long getTimeout() {
+		return timeout;
+	}
+
 	/**
 	 * 设置开始时间
 	 */
