@@ -83,12 +83,12 @@ public class TietukuUtils {
 	/**
 	 * 获得小图片（缩略图，URL中附加T标识）
 	 */
-	public static String getImageThumbnailUrl(String imageUrlPrefix, String imageUrlId) {
+	public static String getImageThumbnailUrl(String imageUrlPrefix, String imageUrlId, String suffix) {
 		if (imageUrlPrefix == null || imageUrlId == null) {
 			return null;
 		}
 
-		return imageUrlPrefix + imageUrlId + TietukuConstants.ImageUrl_Thumbnail + ".jpg";
+		return imageUrlPrefix + imageUrlId + TietukuConstants.ImageUrl_Thumbnail + suffix;
 	}
 
 	public static void main(String[] args) {
